@@ -1,0 +1,23 @@
+.menubar{
+    text-align: center;
+    background-color:#402d51;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.menubar .menu a:link{
+    color: white;
+    text-decoration: none;
+}
+.menubar .menu a:visited{
+    color: white;
+    text-decoration: none;
+}
+.menubar .menu a:hover{
+    color: white;
+    text-decoration:underline;
+}
+.menubar .menu a:active{
+    color: white;
+    text-decoration: none;
+}

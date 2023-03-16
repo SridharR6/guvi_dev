@@ -1,0 +1,18 @@
+.page{
+    display: flex;
+    height: 100vh;
+    padding-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+/* .content{
+    border: 1px solid black;
+    padding-top: 15px;
+} */
+.heading{
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: larger;
+    display: flex;
+    justify-content: center;
+}
