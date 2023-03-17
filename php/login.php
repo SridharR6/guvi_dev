@@ -31,14 +31,6 @@ if (mysqli_num_rows($result) == 1) {
         date_default_timezone_set('Asia/Kolkata');
         $curr = date('d-m-Y H:i:s');
         $redis->set("loggedinat",$curr);
-        $c = $redis->exists('count');
-        if($c){
-            $cnt = intval($redis->get("count")) + 1;
-            $redis->set("count",$cnt);
-        }else{
-            $redis->set("count",1);
-        }
-
     }
     catch(Exception $e){
         echo $e->getMessage();
