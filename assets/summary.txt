@@ -1,3 +1,4 @@
+
 things to be done:
 1) HTML
 2) CSS
@@ -5,7 +6,7 @@ things to be done:
 4) JS
 5) AJAX
 6) PHP
-7) MYSQL
+7) MYSQL - Prepared statements
 8) MONGODB
 9) REDIS
 10) LOCALSTORAGE
@@ -17,9 +18,9 @@ THINGS DONE:
 4) JS
 5) AJAX
 6) PHP
-7) MONGODB
+7) MYSQL - Prepared Statements
 8) REDIS
 9) LOCALSTORAGE
 
 THINGS LEFT UNDONE:
-1)MYSQL
+1)MONGODB
