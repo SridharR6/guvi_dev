@@ -36,7 +36,7 @@ function start(){
         window.location.href = "./index.html";
     })
     document.getElementById("submission").addEventListener("click",(event)=>{
-        // confirm("are you sure want to submit the data???")
+        event.preventDefault();
         console.log(fname,lname, age, dob, pwd, pwd1, mailid, address, phone)
        
         $(document).ready(function() {
@@ -55,17 +55,16 @@ function start(){
                     
                 },
                 success: function(response) {
-                    console.log(response);
-                    alert("signed up successfully");
-                    window.location.href = "./index.html";
+                    alert(response);
+                    if(response.includes("signed Up")){
+                        window.location.href = "./index.html";
+                    }
                 },
                 error: function(xhr, status, error) {
                     console.log(error);
                 }
             });
           });
-       
-        event.preventDefault();
         
     })
 }
