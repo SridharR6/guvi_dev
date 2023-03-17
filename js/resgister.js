@@ -56,6 +56,8 @@ function start(){
                 },
                 success: function(response) {
                     console.log(response);
+                    alert("signed up successfully");
+                    window.location.href = "./index.html";
                 },
                 error: function(xhr, status, error) {
                     console.log(error);
