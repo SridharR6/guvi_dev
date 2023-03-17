@@ -3,6 +3,14 @@ window.addEventListener("load",start);
 var fname, lname, dob, age, address, mailid, phone, pwd, pwd1;
 
 function start(){
+    if(localStorage.getItem("userId")!=null){
+        document.getElementById("page").style.display = "none";
+        document.getElementById("useralready").style.display = "block";
+        document.getElementById("useralready").innerHTML = "<br>Already logged In. If you want to logout visit 'Profile-page'<br><button id = 'home1' class = 'btn btn-primary'>Back 2 Home</button>";
+        document.getElementById("home1").addEventListener("click",()=>{
+            window.location.href = "./index.html";
+        })
+    }
     document.getElementById("fname").addEventListener("change",()=>{
         fname = document.getElementById("fname").value;
     })

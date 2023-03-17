@@ -38,6 +38,6 @@ if (mysqli_num_rows($result) == 1) {
 } else {
     echo "invalid credentials";
 }
-
 mysqli_close($connection);
+
 ?>
